@@ -1,0 +1,26 @@
+p{
+    font-size:20px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+h3{margin-left:20px;
+}
+
+.w3-padding-10{margin-left:20px}
+
+.wholeRow{width:100%;
+text-align:left;}
+
+a{font-size:130%;}
+
+
+@media screen and (min-width: 900px) {
+    .them_img{margin-bottom:100px;
+        margin-top:50px;}
+ }

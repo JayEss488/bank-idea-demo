@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>10-14 Youth Savings</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<script src="./moneyCalc.js"></script>
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">10-14 Youth Savings</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Options</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="money.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-padding-10">
+    <h1 class="w3-xxlarge">A New Way to Save</h1>
+  </div>
+</header>
+<hr>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="pig.jpeg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Age 10-14 Short Fixed Terms</h1><br>
+      <p class="w3-large">Discover our educational range of short fixed-term investments, designed to encourage and reward saving, building good habits for adulthood.</p>
+    </div>
+  </div>
+  
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <h1>What we Offer</h1>
+    <div class="w3-col l6 w3-padding-large">
+      <br>
+      <h3>1 month</h3>
+      <p class="w3-text-grey"><span class="w3-tag w3-light-grey">1%</span>Available once every 3 months.</p>
+      <div class="w3-container w3-padding-large" id="contact">
+        <p class="w3-input w3-padding-16">Calculate How Much You Could Earn</p>
+        <p><input id="min" class="w3-input" step="0.01" type="number" placeholder="£ Initial Balance"></p>
+        <h2 id="mOut" class="w3-padding-10"></h2>
+        <p><button id="mb" class="w3-button w3-blue w3-section" onclick="calcIncrease('m',null)" type="submit">Show Increase</button></p>
+        <br><br>
+      </div>
+    
+      <h3>2 weeks</h3>
+      <p class="w3-text-grey"><span class="w3-tag w3-light-grey">0.3%</span>Available once every month.</p>   
+      <div class="w3-container w3-padding-large" id="contact">
+        <p class="w3-input w3-padding-16 ">Calculate How Much You Could Earn</p>
+        <p><input id="win" class="w3-input" step="0.01" type="number" placeholder="£ Initial Balance"></p>
+        <h2 id="wOut" class="w3-padding-10"></h2>
+        <p><button id="wb" class="w3-button w3-blue w3-section" onclick="calcIncrease('w',null)" type="submit">Show Increase</button></p>
+      </button></p>
+      </div>
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./meadows.jpg" class="w3-round w3-image w3-opacity-min w3-padding  them_img" style="width:100%">
+      <img src="./field.jpg" class="w3-round w3-image w3-opacity-min w3-padding them_img" style="width:100%">
+    </div>
+  </div>
+
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
